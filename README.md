@@ -1,3 +1,5 @@
+### Differences to kaspanet/rusty-kaspa
+Currently just includes some small test/bench fixes, and target-cpu specific compiling instructions.
 
 <h1>Kaspa On Rust</h1>
 
@@ -242,7 +244,11 @@ The framework is compatible with all major desktop and mobile browsers.
   ```bash
 cargo run --release --bin kaspad -- --testnet
   ```
-
+  **Slightly more optimization for local use**
+  This enables the compiler to use additional vectorization techniques, that may or may not speed up things, for optimized for the specific local CPU. See default and native CPU with `rustc --print target-cpus`
+```sh 
+RUSTFLAGS="-C target-cpu=native" cargo run --release
+```
   **Testnet 11**
 
   For participation in the 10BPS test network (TN11), see the following detailed [guide](docs/testnet11.md).
