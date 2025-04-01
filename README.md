@@ -245,7 +245,8 @@ The framework is compatible with all major desktop and mobile browsers.
 cargo run --release --bin kaspad -- --testnet
   ```
   **Slightly more optimization for local use**
-  This enables the compiler to use additional vectorization techniques, that may or may not speed up things, for optimized for the specific local CPU. See default and native CPU with `rustc --print target-cpus`
+
+ This enables the compiler to use additional vectorization techniques, that may or may not speed up things, for optimized for the specific local CPU. See default and native CPU with `rustc --print target-cpus`
 ```sh 
 RUSTFLAGS="-C target-cpu=native" cargo run --release
 ```
