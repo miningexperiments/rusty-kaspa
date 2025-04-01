@@ -1,5 +1,10 @@
 ### Differences to kaspanet/rusty-kaspa
-Currently just includes some small test/bench fixes, and target-cpu specific compiling instructions.
+This fork will follow kaspanet branch heavily, focusing on fixes and optimizations.
+
+Currently differences include:
+- test/bench fixes
+- math check for UtxoChangeSubcription
+- target-cpu specific compiling instructions.
 
 <h1>Kaspa On Rust</h1>
 
